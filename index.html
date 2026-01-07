@@ -13,7 +13,6 @@
       color: #333;
     }
 
-    /* HEADER */
     header {
       display: flex;
       align-items: center;
@@ -22,7 +21,6 @@
       color: white;
       padding: 30px;
       gap: 20px;
-      flex-wrap: wrap;
       text-align: center;
     }
 
@@ -31,50 +29,34 @@
       height: 90px;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 32px;
-    }
-
-    header h2 {
-      margin: 8px 0 0;
-      font-size: 18px;
-      font-style: italic;
-      color: #e0f7fa;
-    }
-
-    /* CARD CONTAINER */
-    .container {
+    .cards {
       display: flex;
       justify-content: center;
-      gap: 50px;
+      gap: 40px;
       margin: 60px 20px;
       flex-wrap: wrap;
     }
 
-    /* CARDS */
-    .card {
+    .hello {
       background: white;
       border: 3px solid #2e7d32;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       padding: 30px;
       text-align: center;
-      width: 280px;
-      max-width: 100%;
+      width: 250px;
     }
 
-    .card h3 {
+    .hello h3 {
       color: #2e7d32;
-      margin-top: 0;
     }
 
-    .card p {
+    .hello p {
       font-size: 14px;
       line-height: 1.6;
     }
 
-    .card a {
+    .hello a {
       display: inline-block;
       margin-top: 15px;
       padding: 10px 20px;
@@ -85,32 +67,8 @@
       font-weight: bold;
     }
 
-    .card a:hover {
+    .hello a:hover {
       background: #1b5e20;
-    }
-
-    /* 📱 MOBILE RESPONSIVE */
-    @media (max-width: 600px) {
-      header {
-        padding: 20px;
-      }
-
-      header h1 {
-        font-size: 24px;
-      }
-
-      header h2 {
-        font-size: 14px;
-      }
-
-      .container {
-        margin-top: 40px;
-        gap: 30px;
-      }
-
-      .card {
-        padding: 20px;
-      }
     }
   </style>
 </head>
@@ -118,30 +76,52 @@
 <body>
 
 <header>
-  <img class="logo" src="logo.jpg" alt="School Logo">
+  <img class="logo" src="logo.jpg" alt="Lakshmipat Singhania Public School Logo">
   <div>
     <h1>Lakshmipat Singhania Public School</h1>
     <h2>"ज्ञानम् अमृतम्" – Knowledge is Nectar</h2>
   </div>
 </header>
 
-<div class="container">
+<div class="cards">
 
-  <div class="card">
+  <div class="hello">
     <h3>Madagascar Almond Plant</h3>
-    <p>Learn about the Madagascar Almond Plant</p>
-    <a href="madagascor.html">Learn about</a>
+    <p>Learn about the Madagascar Almond Plant.</p>
+    <a href="madagascar.html">Learn more</a>
   </div>
 
-  <div class="card">
+  <div class="hello">
     <h3>Ruffled Fan Palm</h3>
-    <p>Learn about the Ruffled Fan Palm</p>
-    <a href="plam.html">Learn about</a>
+    <p>Learn about the Ruffled Fan Palm.</p>
+    <a href="palm.html">Learn more</a>
+  </div>
+
+  <div class="hello">
+    <h3>Rukmini Flower Plant</h3>
+    <p>Learn about the Rukmini Flower Plant.</p>
+    <a href="rukmini.html">Learn more</a>
+  </div>
+
+  <div class="hello">
+    <h3>Sadabahar Flower Plant</h3>
+    <p>Learn about the Sadabahar Flower Plant.</p>
+    <a href="sadabahar.html">Learn more</a>
+  </div>
+
+  <div class="hello">
+    <h3>Marigold Flower Plant</h3>
+    <p>Learn about the Marigold Flower Plant.</p>
+    <a href="marigold.html">Learn more</a>
+  </div>
+
+  <div class="hello">
+    <h3>Gerbera Flower Plant</h3>
+    <p>Learn about the Gerbera Flower Plant.</p>
+    <a href="gerbera.html">Learn more</a>
   </div>
 
 </div>
 
 </body>
 </html>
-
-
