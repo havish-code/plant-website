@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lakshmipat Singhania Public School - Knowledge Zone</title>
+
   <style>
     body {
       font-family: "Segoe UI", Arial, sans-serif;
@@ -11,7 +12,8 @@
       background: #f9fafc;
       color: #333;
     }
-    /* Header with logo and school name */
+
+    /* Header */
     header {
       display: flex;
       align-items: center;
@@ -19,61 +21,63 @@
       background: linear-gradient(135deg, #004d40, #2e7d32);
       color: white;
       padding: 30px;
+      gap: 25px;
+      text-align: center;
+      flex-wrap: wrap;
     }
+
     header img {
-      height: 100px;
-      margin-right: 25px;
+      height: 90px;
     }
+
     header h1 {
       margin: 0;
       font-size: 30px;
       font-weight: bold;
     }
+
     header h2 {
-      margin: 8px 0;
-      font-size: 20px;
-      font-weight: normal;
+      margin: 8px 0 0;
+      font-size: 18px;
       font-style: italic;
       color: #e0f7fa;
     }
 
-    /* Knowledge Zone Nav Bar */
+    /* Navbar */
     nav {
-      background:#b91c1c;
+      background: #b91c1c;
       padding: 14px;
       text-align: center;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
-    nav a {
+
+    nav h2 {
+      margin: 0;
       color: white;
-      margin: 0 25px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 16px;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: #ffeb3b; /* gold highlight on hover */
+      font-size: 22px;
     }
 
-    /* Section styling */
+    /* Section */
     section {
-      padding: 40px;
-      max-width: 1000px;
+      padding: 40px 20px;
+      max-width: 1100px;
       margin: auto;
     }
-    h2 {
+
+    section h2 {
       color: #2e7d32;
       text-align: center;
       margin-bottom: 30px;
-      font-size: 24px;
+      font-size: 26px;
     }
+
+    /* Content layout */
     .flex-container {
       display: flex;
       align-items: flex-start;
-      justify-content: space-between;
       gap: 30px;
     }
+
     .big-box {
       flex: 1;
       background: white;
@@ -84,66 +88,118 @@
       font-size: 16px;
       line-height: 1.6;
     }
+
     .big-box ul {
       list-style-type: square;
       padding-left: 20px;
     }
+
     .big-box li {
       margin-bottom: 10px;
     }
+
     .plant-photo {
-      flex: 0 0 300px;
+      flex: 0 0 320px;
       text-align: center;
     }
+
     .plant-photo img {
       max-width: 100%;
       border: 3px solid #2e7d32;
       border-radius: 10px;
     }
+
+    /* -------- RESPONSIVE -------- */
+
+    /* Tablets */
+    @media (max-width: 900px) {
+      .flex-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .plant-photo {
+        max-width: 400px;
+      }
+
+      section h2 {
+        font-size: 24px;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      header {
+        padding: 20px;
+      }
+
+      header img {
+        height: 70px;
+      }
+
+      header h1 {
+        font-size: 22px;
+      }
+
+      header h2 {
+        font-size: 14px;
+      }
+
+      section {
+        padding: 25px 15px;
+      }
+
+      .big-box {
+        padding: 20px;
+        font-size: 15px;
+      }
+
+      nav h2 {
+        font-size: 20px;
+      }
+    }
   </style>
 </head>
+
 <body>
 
-  <!-- School Header -->
+  <!-- Header -->
   <header>
-    <img src="logo.jpg" alt="">
+    <img src="logo.jpg" alt="School Logo">
+    <div>
       <h1>Lakshmipat Singhania Public School</h1>
       <h2>"ज्ञानम् अमृतम्" – Knowledge is Nectar</h2>
     </div>
   </header>
 
-  <!-- Knowledge Zone Nav Bar -->
+  <!-- Nav -->
   <nav>
-    <h2 style="color: white;">Knowledge Zone</h2>
+    <h2>Knowledge Zone</h2>
   </nav>
 
-  <!-- Knowledge Zone Section -->
-  <section id="tree">
+  <!-- Content -->
+  <section>
     <h2>Sadabahar Flower Plant</h2>
+
     <div class="flex-container">
-      
-      <!-- Details box on the left -->
+
       <div class="big-box">
         <ul>
-         <li><strong><span class="label">Botanical Name:</strong></span> Catharanthus roseus</li>
-          <li><strong><span class="label">Indian Name (Hindi):</strong></span> Sadabahar</li>
-          <li><strong><span class="label">Common Names:</strong></span> Periwinkle, Madagascar Periwinkle, Rosy Periwinkle, Vinca</li>
-          <li><strong><span class="label">Appearance:</strong></span> Five-petaled pink flower with glossy green leaves; often grown in pots</li>
-          <li><strong><span class="label">Foliage:</strong></span> Glossy green leaves</li>
-          <li><strong><span class="label">Height:</strong></span> Typically 1–2 feet</li>
-          <li><strong><span class="label">Family:</strong></span> Apocynaceae</li>
-          <li><strong><span class="label">Origin</strong>:</span> Native to Madagascar; widely cultivated in India</li>
-          <li><strong><span class="label">Uses:</strong></span> Ornamental gardening; medicinal (source of vincristine and vinblastine)</li>
-          <li><strong><span class="label">Care:</strong></span> Thrives in full sun, tolerates heat and poor soil, blooms year-round</li>
-
-
-
+          <li><strong>Botanical Name:</strong> Catharanthus roseus</li>
+          <li><strong>Indian Name (Hindi):</strong> Sadabahar</li>
+          <li><strong>Common Names:</strong> Periwinkle, Madagascar Periwinkle, Vinca</li>
+          <li><strong>Appearance:</strong> Five-petaled pink flowers with glossy green leaves</li>
+          <li><strong>Foliage:</strong> Glossy green leaves</li>
+          <li><strong>Height:</strong> 1–2 feet</li>
+          <li><strong>Family:</strong> Apocynaceae</li>
+          <li><strong>Origin:</strong> Madagascar</li>
+          <li><strong>Uses:</strong> Ornamental gardening, medicinal use</li>
+          <li><strong>Care:</strong> Full sun, heat tolerant, blooms year-round</li>
         </ul>
       </div>
 
-      <!-- Plant photo on the right -->
       <div class="plant-photo">
-        <img src="sadabhar.jpg" alt="Madagascar Almond Tree">
+        <img src="sadabhar.jpg" alt="Sadabahar Flower Plant">
       </div>
 
     </div>
